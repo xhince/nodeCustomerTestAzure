@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Azure DB List</title>
+    <link rel="stylesheet" href="bootstrap4_3_1.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-group mb-3 justify-content-center">
+            <form>
+                <br>
+                <label for="customer_name">Customer Name:</label>
+                <input type="text" class="form-control" placeholder="Customer Name" aria-label="Customer Name" aria-describedby="basic-addon1" id="c_name"><br>
+
+                <label for="customer_address">Customer Address:</label>
+                <input type="text" class="form-control" placeholder="Customer Address" aria-label="Customer Address" aria-describedby="basic-addon1" id="c_address"><br>
+
+                <button type="button" class="btn btn-success" onclick="addCustomer();">Add Customer</button>
+                <button type="button" class="btn btn-danger" onclick="deleteCustomer();">Delete Customer</button>
+                <br /><br />
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function addCustomer() {
+            var c_name = document.getElementById("c_name").value;
+            var c_address = document.getElementById("c_address").value;
+            //socket.emit('update', { beacon_Id: bId, product_Id: pId });
+            document.getElementById("c_name").value="";
+            document.getElementById("c_address").value="";
+        }
+        function selectAllCustomers() {//app.js in içindeki fonksiyon çaðýrýlabilir mi? Ozaman bu fonksiyon gerekmez.
+            socket.emit('selectSql');
+        }
+        function deleteCustomer() {//
+            var bId = document.getElementById("bId").value;
+            var pId = document.getElementById("pId").value;
+            //socket.emit('deleteFromOnlineDatabase', { beacon_Id: bId, product_Id: pId });
+            document.getElementById("bId").value="";
+            document.getElementById("pId").value="";
+        }
+    </script>
+
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src="popper_1_14_7.min.js"></script>
+    <script src="bootstrap_4_3_1.min.js"></script>
+</body>
+</html>

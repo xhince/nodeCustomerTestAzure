@@ -1,0 +1,3 @@
+C:\Users\tr30106\Desktop\reactTutorial\nodeCustomerTest1\obj\Debug\nodeCustomerTest1.njsprojAssemblyReference.cache
+C:\Users\tr30106\Desktop\reactTutorial\nodeCustomerTest1\obj\Debug\nodeCustomerTest1.njsproj.CoreCompileInputs.cache
+C:\Users\tr30106\Desktop\reactTutorial\nodeCustomerTest1\bin\Microsoft.NodejsTools.WebRole.dll

@@ -1,0 +1,14 @@
+{
+  "name": "node-customer-test1",
+  "version": "0.0.0",
+  "description": "nodeCustomerTest1",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "tedious": "^6.4.0"
+  }
+}
